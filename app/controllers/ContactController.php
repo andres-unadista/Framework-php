@@ -2,10 +2,13 @@
 
 namespace App\Controllers;
 
-class ContactController
+class ContactController extends Controller
 {
   public function index($name)
   {
-    return "El contacto es $name";
+    return $this->view('contact.index', [
+      'title' => $name,
+      'state' => 'activo'
+    ]);
   }
 }
