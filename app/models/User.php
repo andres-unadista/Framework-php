@@ -2,19 +2,19 @@
 
 namespace App\Models;
 
-
-
-class User extends Database
+class User extends Model
 {
-  public function getContacts()
+  protected $table = 'meet';
+
+  public function getMeets()
   {
-    $sql = "SELECT * FROM contacts";
+    $sql = "SELECT * FROM meet";
     return $this->query($sql)->getAll();
   }
 
-  public function getContact()
+  public function getMeet()
   {
-    $sql = "SELECT * FROM contacts";
+    $sql = "SELECT * FROM meet";
     return $this->query($sql)->first();
   }
 }

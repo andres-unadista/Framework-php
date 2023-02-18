@@ -14,6 +14,11 @@
     <li>Nombre: <?= ucfirst($title) ?></li>
     <li>Estado: <?= ucfirst($state) ?></li>
   </ul>
+  <pre>
+    <?php
+    var_dump($meets);
+    ?>
+  </pre>
 </body>
 
 </html>
