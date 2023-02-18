@@ -17,8 +17,6 @@ class ContactController extends Controller
       'nombre' => 'Física',
       'fecha_hora' => $dateNow->format('Y-m-d H:i:s')
     ]); */
-    return $userModel->delete(3);
-
     return $this->view('contact.index', [
       'title' => $name,
       'state' => 'activo',
